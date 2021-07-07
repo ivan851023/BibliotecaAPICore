@@ -1,0 +1,12 @@
+﻿@model BibliotecaWebCore.Models.LibroModel
+@{
+    ViewBag.Title = "Registro";
+}
+
+
+<div class="form-group">
+
+    @Html.LabelFor(x => x.labelAutor)
+    @Html.DropDownListFor(x => x.selectValueAutor, Model.listAutor, "Seleccione una opción", new { @class = "form-control", @required = "true", @id = "ddlAutor" })
+
+</div>

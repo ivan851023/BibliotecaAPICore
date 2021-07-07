@@ -62,7 +62,7 @@ namespace BibliotecaAPICore.Controllers
                     return StatusCode(500, "El autor no está registrado");
                 }
 
-                if (count == limiteLibros)
+                if (count == limiteLibros || count > limiteLibros)
                 {
                     return StatusCode(500, "Se alcanzo el limite de registro de libros");
                 }
